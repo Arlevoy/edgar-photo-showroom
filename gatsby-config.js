@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    'gatsby-plugin-typescript',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -25,6 +26,12 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `serge_de_ravar`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
